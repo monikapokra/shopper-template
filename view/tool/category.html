@@ -1,0 +1,18 @@
+<div id="{$_name}">
+<nav id="menu" class="pull-right">
+    {category_list}
+    
+<ul>{rows}{row}
+        <li data-id="{$id}"><a href="{$url}">{$name} </a>
+	{item_count_wrapper}{$item_count} - items {/}
+	{image_wrapper}
+		<img src="{$category_image_url}" />{/} 
+		{price_wrapper}
+            <p>{$min_price} - {$max_price}</p>{/}
+            {$nested_category}
+        </li>{/}{/}
+    </ul>
+
+{/}
+</nav>
+</div>
